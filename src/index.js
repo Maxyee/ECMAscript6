@@ -27,14 +27,14 @@ console.log(arr);
 
 
 // problem with var variable declartaion
-var a = 10;
+var ab = 10;
 
 if(true)
 {
-    var a = 20;
-    console.log(a);
+    var ab = 20;
+    console.log(ab);
 }
-console.log(a); // it prints the value a = 20;
+console.log(ab); // it prints the value a = 20;
 // problem with var variable declartion 
 
 // let variable declaration code start
@@ -43,9 +43,9 @@ let z = 10;
 if(true)
 {
     let z = 20;
-    console.log(a);
+    console.log(z);
 }
-console.log(a); // it prints the value of z = 10;
+console.log(z); // it prints the value of z = 10;
 // let variable declaration code end
 
 
@@ -54,7 +54,6 @@ function demo()
 {
     {
         let x = 10;
-
         {
             const x = 15;
             console.log(x);
@@ -66,3 +65,23 @@ function demo()
 }
 demo();
 // code ends here
+
+//template string code starts here ---->
+const name = 'Julhas Hossain'
+const age = 25
+const email = 'eyaminkhan00@gmail.com'
+
+const details = 'Name: ' + name + 'Age: '+ age + 'Email: ' + email
+
+console.log(details)
+//template string code ends here ----->
+
+
+//template string multiline code starts here ------->
+const name2 = 'Eyamin Khan'
+const age2 = 23
+const email2 = 'eyamin@gmail.com'
+
+const details2 = `Name : ${name2} Age: ${age2} Email: ${email2} `
+console.log(details2)
+//template string multiline code ends here ---------->
