@@ -109,7 +109,10 @@ const sqe = x => x*x
 console.log(sqe(10))
 //arrow function code end -------->
 
+
+
 //arrow fuction with lexical this ------>
+
 // const obj = {
 //     name: 'Julhas hOssain',
 //     print : function() {
@@ -142,6 +145,27 @@ const obj2 = {
 
 obj2.print()
 
-
-
 //arrow functiom with lexical this ends ---->
+
+
+//enhance object code starts here ------>
+let name23 = 'Mohon Khan';
+let email23 = 'mohon@gmail.com';
+
+const Cat = {
+    name: name,
+    email: email
+}
+
+const Dog = {
+    name23,
+    email23,
+
+    print() {
+        console.log(this.name23, this.email23)
+    }
+}
+
+Dog.print()
+console.dir(Dog)
+//enhance object code ends here -------->
