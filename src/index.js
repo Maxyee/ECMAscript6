@@ -85,3 +85,26 @@ const email2 = 'eyamin@gmail.com'
 const details2 = `Name : ${name2} Age: ${age2} Email: ${email2} `
 console.log(details2)
 //template string multiline code ends here ---------->
+
+
+//arrow function code start------->
+const print = (name) => {
+    console.log('Hello Arrow Function' + name)
+}
+
+print('julhas hossain')
+
+const addMe = (a,b) => {
+    return a+b;
+}
+console.log(addMe(10,20))
+
+const subMe = (a,b) => a-b;
+
+console.log(subMe(20,10))
+
+
+const sqe = x => x*x 
+
+console.log(sqe(10))
+//arrow function code end -------->
