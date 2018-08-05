@@ -108,3 +108,40 @@ const sqe = x => x*x
 
 console.log(sqe(10))
 //arrow function code end -------->
+
+//arrow fuction with lexical this ------>
+// const obj = {
+//     name: 'Julhas hOssain',
+//     print : function() {
+//         console.log(this)
+//     }
+// }
+
+//normal way of using this,...
+const obj = {
+    name: 'Julhas hOssain',
+    print : function() {
+        setTimeout(function() {
+            console.log(this)
+        }.bind(this), 1000)
+    }
+}
+
+obj.print()
+
+//using arrow function into this obj ......
+
+const obj2 = {
+    name: 'Julhas hOssain Khan',
+    print : function() {
+        setTimeout(() => {
+            console.log(this.name)
+        }, 1000)
+    }
+}
+
+obj2.print()
+
+
+
+//arrow functiom with lexical this ends ---->
