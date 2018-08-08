@@ -169,3 +169,34 @@ const Dog = {
 Dog.print()
 console.dir(Dog)
 //enhance object code ends here -------->
+
+//destructing Array and Object Code Stars ------->
+const arraay = [1,2,3];
+
+let [a, ,c] = arraay;
+
+console.log(a);
+console.log(c);
+
+const obj55 = {
+    name: 'Julhas hossain',
+    email: 'julhas@gmail.com'
+}
+
+let { name, email } = obj55;
+console.log(name, email);
+
+function print({name, email}){
+    console.log(`Hello ${name}; Email ${email}`);
+}
+
+print({name, email})
+
+
+//let name = obj55.name;
+//let email = obj55.email;
+
+//var a = arr[0];
+//var b = arr[2];
+
+//destructing Array and Object Code Ends ------->
