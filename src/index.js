@@ -1,4 +1,3 @@
-
 // arrow function code start
 const a = 10;
 const b = 20;
@@ -242,7 +241,17 @@ var obj77 = {
     name: 'eyamin',
     age: 22
 }
-
 console.log(obj77);
 
 //Default Parameter, Rest And Spred Operator ------->
+
+
+//Module System Code starts ------>
+
+import * as math from './math'; //calling all the function from math js file
+console.log(math.add(10,12));
+
+import { add,mod } from './math';  // if we need specific method form another file we can call in destructuring way
+console.log(mod(10,3));
+
+//Module System Code Ends ------->
