@@ -200,3 +200,49 @@ print({name, email})
 //var b = arr[2];
 
 //destructing Array and Object Code Ends ------->
+
+
+//Default Parameter, Rest, And Spred Operator ------>
+
+//Default Parameter
+let adding = (a, b) => a+b;
+
+console.lag(adding(10,20));
+
+let squre = (a=1,b=a) => a*b;  // if we can not pass any value for that function then the default value for a =1 and b = a
+
+console.log(squre(10));
+console.log(squre(10, 5))
+
+//Rest Operator
+function sumesion(...num)
+{
+    //console.log(num);
+    return num.reduce((a,b) => a+b );
+}
+let xam = sumesion(10,20,30,40);
+console.log(xam);
+
+//Spred Oparator
+var arrayvalue = [1,2,3,4];
+console.log(arrayvalue);
+console.log(...arrayvalue);
+
+arrayvalue = [...arrayvalue , 12, 223, 10]
+console.log(arrayvalue);
+
+//for object value
+var obj66 = {
+    name: 'julhas hossain',
+    email: 'hossain@gmail.com'
+}
+
+var obj77 = {
+    ...obj66,
+    name: 'eyamin',
+    age: 22
+}
+
+console.log(obj77);
+
+//Default Parameter, Rest And Spred Operator ------->
