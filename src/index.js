@@ -266,3 +266,10 @@ console.log(p1.name);
 p1.print();
 
 //Classes in Es6 code ends -------->
+
+//inheritance in Es6 code start  ------>
+import Student from './student.js'
+
+let st1 = new Student('Eyamin', 'eyamin@gmail.com', 1551)
+st1.print();
+//inheritance in Es6 code ends  ------>
