@@ -255,3 +255,14 @@ import { add,mod } from './math';  // if we need specific method form another fi
 console.log(mod(10,3));
 
 //Module System Code Ends ------->
+
+
+
+//Classes in Es6 code starts ------>
+import Person from './person'
+
+let p1 = new Person('julhas', 'julhas@gmail.com');
+console.log(p1.name);
+p1.print();
+
+//Classes in Es6 code ends -------->
